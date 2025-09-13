@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loops Browser</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background: linear-gradient(135deg, #a7baee, #e8ecf5);
+      color: #222;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      padding: 2rem 3rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      max-width: 600px;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0.3rem 0;
+      color: #555;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 0.8rem 1.6rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      background: #4a6cf7;
+      color: white;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .btn:hover {
+      background: #3652c7;
+      transform: scale(1.05);
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      text-align: left;
+    }
+
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .feature-icon {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .disclaimer {
+      font-size: 0.8rem;
+      color: #777;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    @media (min-width: 700px) {
+      .features {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .feature {
+        flex: 1 1 250px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Main header card -->
+  <div class="card">
+    <h1>Loops</h1>
+    <p>The Minimal Browser</p>
+    <button class="btn">Get Started</button>
+  </div>
+
+  <!-- Why You Need Loops card -->
+  <div class="card">
+    <h2>Why You Need Loops</h2>
+    <h3>⚡ Uses Less RAM</h3>
+    <p>Up to 60% less RAM than the leading browser*</p>
+
+    <h3>🗂 One Tab Only</h3>
+    <p>Always distracted with 20 tabs? Now you’re focused with just one.</p>
+
+    <h3>🚫 No Search History</h3>
+    <p>What happens in Loops… stays in Loops.</p>
+
+    <h3>🔒 No Password Manager</h3>
+    <p>If the big guys get hacked, you’re safe. Loops never stores your passwords.</p>
+  </div>
+
+  <!-- Features card -->
+  <div class="card">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <div>
+          <h3>Chromium Engine</h3>
+          <p>Modern and fast web rendering using PyQt6's QWebEngineView.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">◀ ▶ ⟳</div>
+        <div>
+          <h3>Navigation Buttons</h3>
+          <p>Back, forward, and reload buttons make browsing smooth and easy.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🌐</div>
+        <div>
+          <h3>Address Bar</h3>
+          <p>Type any URL and go anywhere on the web.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🧘</div>
+        <div>
+          <h3>Minimalist UI</h3>
+          <p>Lightweight interface, no clutter, just you and the web.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🏠</div>
+        <div>
+          <h3>Custom loops Start Page</h3>
+          <p>Opens your loops landing page on launch not google loops.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📝</div>
+        <div>
+          <h3>Auto-updating URL Bar</h3>
+          <p>The address bar always shows the current page URL.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="disclaimer">*Loops is a personal project browser and features are minimalist by design.</p>
+</body>
+</html>

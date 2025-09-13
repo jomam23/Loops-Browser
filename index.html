@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Search — demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #ffffff;
+      --muted:#70757a;
+      --accent:#1a73e8; /* Google-blue */
+      --box-bg:#f8f9fa;
+      --shadow: 0 4px 12px rgba(32,33,36,0.08);
+      --radius:24px;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:#202124;
+    }
+
+    .page {
+      min-height:100%;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding-top:12vh;
+    }
+    .logo {
+      font-weight:500;
+      font-size:48px;
+      letter-spacing:1px;
+      margin-bottom:28px;
+    }
+    .search-wrap{
+      width:min(600px, 92%);
+    }
+
+    .search {
+      display:flex;
+      align-items:center;
+      gap:8px;
+      background:var(--box-bg);
+      padding:10px 18px;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      border:1px solid rgba(0,0,0,0.06);
+    }
+
+    .search input{
+      flex:1;
+      border:0;
+      outline:0;
+      font-size:16px;
+      background:transparent;
+      padding:8px 4px;
+    }
+
+    .buttons {
+      margin-top:18px;
+      display:flex;
+      gap:12px;
+      justify-content:center;
+    }
+
+    .btn {
+      padding:10px 16px;
+      border-radius:6px;
+      border:1px solid rgba(0,0,0,0.08);
+      background:#fff;
+      cursor:pointer;
+      font-size:14px;
+    }
+
+    .btn.primary {
+      background:var(--accent);
+      color:#fff;
+      border-color:transparent;
+      box-shadow: none;
+    }
+
+    .muted { color:var(--muted); font-size:14px; margin-top:22px; text-align:center; }
+    @media (max-width:420px){
+      .logo{ font-size:36px;}
+      .search { padding:8px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="logo">LoopNet</div>
+
+    <div class="search-wrap">
+      <form action="https://www.google.com/search" method="get" class="search" role="search">
+        <input name="q" type="search" placeholder="Search Google or type a URL" aria-label="Search" />
+        <button type="submit" class="btn" aria-label="Search">🔍</button>
+      </form>
+
+      <div class="buttons">
+        <button class="btn">Google Search</button>
+        <button class="btn primary">I'm Feeling Lucky</button>
+      </div>
